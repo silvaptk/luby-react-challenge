@@ -1,68 +1,46 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# Teste para vaga de estágio de *front-end* em React na empresa LabLuby
 
-## Available Scripts
+## Considerações iniciais
 
-In the project directory, you can run:
+Este repositório foi criado com o objetivo de possibilitar a avaliação da empresa sobre o desenvolvimento de teste para vaga de estágio em desenvolvimento *front-end* com React, para a empresa LabLuby.
 
-### `yarn start`
+## Sobre o projeto
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Este projeto é uma PWA (*Progressive Web Application*) com base na API do GitHub. O usuário insere o *login* do GitHub na página inicial e os dados relacionados ao *login* são armazenados na aplicação.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### A página principal (*Home*)
 
-### `yarn test`
+A página principal exibe as principais informações do usuário: *login*, nome, e-mail, localização, quantidade de repositórios, de seguidores e de pessoas que segue. Ela também concede acesso a todas as outras páginas da aplicação.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### A página de repositórios
 
-### `yarn build`
+A página de repositórios exibe dados (nome, descrição, quantidade de usuários que favoritam o repositório) dos 30 primeiros repositórios, de acordo com ordem alfabética, do usuário em questão. 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Seguidores e usuários sendo seguidos
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+As páginas de seguidores (*followers*) e de usuários que o usuário atual segue (*following*) listam o avatar e o *login* dos 30 primeiros seguidores do usuário, em ordem alfabética. É possível clicar sobre cada um dos usuários listados, para ser redirecionado à página que descreve as informações deste.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Sobre o desenvolvimento
 
-### `yarn eject`
+O projeto foi desenvolvido em 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [React](https://pt-br.reactjs.org/) para construção da interface de usuário, 
+- [Redux](https://redux.js.org/) para persistir os dados da aplicação,
+- [Sass](https://sass-lang.com/) para estilizar as páginas,
+- e a [API do GitHub](https://docs.github.com/pt/rest). 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para criá-lo, utilizei o comando 
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+npx create-react-app pwa-github --template redux
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Também foi necessário utilizar o módulo `react-router-dom` para possibilitar a mudança entre as páginas. Por fim, para que as transições entre as páginas ocorressem de forma mais suave, utilizei o móduo `react-transition-group`.
 
-## Learn More
+## Testando o projeto
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Para que o projeto funcione, é preciso ter o `node` e o `npm` instalados, e também o `create-react-app`. Depois, basta fazer o *download* desse repositório, navegar até ele utilizando o terminal e, por fim, executar `npm install`. As dependências do projeto serão baixadas e ficarão armazenadas no diretório `node_modules`. Depois, basta executar `npm start` para que o projeto seja iniciado no navegador.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Considerações finais
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Já agradeço à LabLuby pela oportunidade de realização do teste, dizendo que aprendi muito durante esses dias de desenvolvimento. Desde já, fico no aguardo de um *feedback*. 
