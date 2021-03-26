@@ -12,13 +12,13 @@ Este projeto é uma PWA (*Progressive Web Application*) com base na API do GitHu
 
 A página principal exibe as principais informações do usuário: *login*, nome, e-mail, localização, quantidade de repositórios, de seguidores e de pessoas que segue. Ela também concede acesso a todas as outras páginas da aplicação.
 
-### A página de repositórios
+### A página de repositórios (*Repos*)
 
 A página de repositórios exibe dados (nome, descrição, quantidade de usuários que favoritam o repositório) dos 30 primeiros repositórios, de acordo com ordem alfabética, do usuário em questão. 
 
-### Seguidores e usuários sendo seguidos
+### A página de seguidores (*Followers*) e de usuários que são seguidos (*Following*)
 
-As páginas de seguidores (*followers*) e de usuários que o usuário atual segue (*following*) listam o avatar e o *login* dos 30 primeiros seguidores do usuário, em ordem alfabética. É possível clicar sobre cada um dos usuários listados, para ser redirecionado à página que descreve as informações deste.
+As páginas de seguidores (*Followers*) e de usuários que o usuário atual segue (*Following*) listam o avatar e o *login* dos 30 primeiros seguidores do usuário, em ordem alfabética. É possível clicar sobre cada um dos usuários listados, para ser redirecionado à página que descreve as informações deste.
 
 ## Sobre o desenvolvimento
 
@@ -29,13 +29,13 @@ O projeto foi desenvolvido em
 - [Sass](https://sass-lang.com/) para estilizar as páginas,
 - e a [API do GitHub](https://docs.github.com/pt/rest). 
 
-Para criá-lo, utilizei o comando 
+Para iniciar o desenvolvimento, utilizei o comando 
 
 ```
 npx create-react-app pwa-github --template redux
 ```
 
-Também foi necessário utilizar o módulo `react-router-dom` para possibilitar a mudança entre as páginas. Por fim, para que as transições entre as páginas ocorressem de forma mais suave, utilizei o móduo `react-transition-group`.
+que instala os módulos essenciais. Também foi necessário utilizar o módulo `react-router-dom` para possibilitar a mudança entre as páginas. Por fim, para que as transições entre as páginas ocorressem de forma mais suave, utilizei o móduo `react-transition-group`.
 
 ## Testando o projeto
 
