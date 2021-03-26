@@ -1,0 +1,153 @@
+@import "colors";
+@import "fonts";
+
+.enter {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $backColor;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 30rem;
+        width: 100%;
+        padding: 1rem;
+        
+
+        small {
+            font-size: $tinyFontSize;
+        }
+
+        small.label {
+            white-space: nowrap;
+            color: white;
+        }
+
+        small.label.hide {
+            color: transparent;
+            display: block;
+        }
+
+        small.errorMessage {
+            color: $red;
+        }
+
+        small.hide {
+            display: none;
+        }
+
+        fieldset {
+            width: 100%;
+            
+            padding: 0.8rem;
+            
+            display: flex;
+            align-items: center;
+
+            background-color: white;
+
+            border: none;
+            border-radius: 0.5rem;
+
+            cursor: text;
+            
+            label {
+                width: 100%;
+
+                position: relative;
+                
+                display: flex;
+                align-items: center;
+
+                input {
+                    width: 100%;
+                    
+                    border: none;
+                    outline: none;
+
+                    line-height: 1;
+                }
+    
+                small {
+                    position: absolute;
+                    right: 0.2rem;
+
+                    cursor: text;
+                }
+            }
+        }
+
+        fieldset:focus {
+            box-shadow: 0 0 1rem #000;
+        }
+
+        a {
+            outline: none;
+            border: none;
+            
+            color: unset;
+            
+            text-decoration: none;
+        }
+
+        button {
+            width: 100%;
+
+            background-color: $yellow;
+            
+            border: none;
+            cursor: pointer;
+
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 0.8rem;
+            border-radius: 0.5rem;
+            transition-duration: 0.3s;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            transition-duration: 0.2s;
+
+            img {
+                height: 1rem;
+                width: auto;
+            }
+        }
+
+        button:hover {
+            box-shadow: 0 0 1rem #000;
+        }
+
+        button:focus {
+            outline: none;
+            box-shadow: 0 0 1rem #888;
+        }
+
+        > small.errorMessage:last-child {
+            font-size: $smallFontSize;
+            display: block;
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid red;
+            border-radius: 0.5rem;
+            font-weight: 300;
+            background-color: rgba(255, 0, 0, 0.1);
+        }
+    }
+
+    img {
+        width: 5rem;
+    }
+}

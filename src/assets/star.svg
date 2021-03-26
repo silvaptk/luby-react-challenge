@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:bx="https://boxy-svg.com"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="195mm"
+   height="200mm"
+   viewBox="0 0 195 200"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="star.svg">
+  <defs
+     id="defs2">
+    <pattern
+       id="pattern4542"
+       patternTransform="translate(478.51611,222.73981)"
+       height="49.081051"
+       width="49.740051"
+       patternUnits="userSpaceOnUse">
+      <rect
+         x="0.5"
+         y="0.50004971"
+         width="48.740002"
+         height="48.081001"
+         style="fill:#ffffff;stroke:#ffffff"
+         bx:origin="0.523281 0.4764"
+         id="rect10"
+         clip-path="none" />
+    </pattern>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.5"
+     inkscape:cx="325.43908"
+     inkscape:cy="110.84668"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="704"
+     inkscape:window-x="1366"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-97)">
+    <path
+       inkscape:transform-center-y="-31.268623"
+       inkscape:transform-center-x="-1.2501884"
+       d="m 151.61107,279.25659 -53.77137,-29.12134 -54.473273,27.78624 11.079768,-60.1386 -43.259453,-43.22074 60.619043,-8.04636 27.737461,-54.49813 26.384864,55.16567 60.40214,9.53905 -44.3123,42.14062 z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="false"
+       sodipodi:arg2="1.5831297"
+       sodipodi:arg1="0.95481121"
+       sodipodi:r2="46.042698"
+       sodipodi:r1="92.085396"
+       sodipodi:cy="204.09605"
+       sodipodi:cx="98.407547"
+       sodipodi:sides="5"
+       id="path896"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#ffce00;stroke-width:15.82458591;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:type="star"
+       transform="matrix(0.94252685,0,0,0.97803734,4.4174712,5.6594276)" />
+  </g>
+</svg>

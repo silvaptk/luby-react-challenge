@@ -1,0 +1,87 @@
+@import "fonts";
+@import "colors";
+
+.followship {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 5rem;
+
+    main {
+        width: 100%;
+        max-width: 40rem;
+        margin: auto;
+
+        section {
+            padding: 1rem 0;
+            color: white;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            border-bottom: 1px solid $mainGray;
+            position: relative;
+            gap: 1rem;
+            transition-duration: 0.2s;
+            cursor: pointer;
+
+            > div {
+                width: 0.5rem;
+                height: 2rem;
+                background-color: $yellow;
+                border-top-right-radius: 0.5rem;
+                border-bottom-right-radius: 0.5rem;
+            } 
+
+            .avatarContainer {
+                background-color: transparent;
+                min-width: 3.2rem;
+                width: 8vw;
+                min-height: 3.2rem;
+                height: 8vw;
+                border: 0.2rem solid white;
+                border-radius: 50%;
+                overflow: hidden;
+                background-color: #DDD;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            strong {
+                font-size: $smallFontSize;
+            }
+
+            button {
+                background-color: transparent;
+                border: none;
+                outline: none;
+                width: fit-content;
+                height: fit-content;
+                padding: 0;
+                position: absolute;
+                right: 2rem;
+                cursor: pointer;
+
+                img {
+                   width: 1rem; 
+                }
+            }
+        }
+
+        section:hover {
+            box-shadow: 0 0 1rem #000;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+    }
+}
+

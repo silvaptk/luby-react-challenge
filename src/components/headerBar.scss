@@ -1,0 +1,38 @@
+@import "fonts";
+@import "colors";
+
+header.headerBar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    position: relative;
+    background-color: $almostBlack;
+
+    strong {
+        color: white;
+        font-size: $smallFontSize;
+    }
+
+    a {
+        position: absolute;
+        width: fit-content;
+        left: 1rem;
+
+        button {
+            width: fit-content;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            img {
+                width: 0.8rem;
+            }
+        }
+    }
+}

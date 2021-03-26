@@ -1,0 +1,167 @@
+@import "colors";
+@import "fonts";
+
+* {
+    line-height: $defaultLineHeight;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.page {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    height: fit-content;
+    display: flex;
+    flex-direction: column; 
+    background-color: $backColor;
+    padding-bottom: 5rem;
+    gap: 1rem;
+
+    header {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 1rem 4rem;
+
+        width: calc(100%);
+        margin: 0;    
+
+        background-color: $almostBlack;
+
+        strong {
+            color: white;
+        }
+
+        strong.centralize {
+            position: absolute;
+            display: block;
+            width: calc(100% - 2rem);
+            text-align: center;
+        }
+
+        button {
+            position: relative;
+            z-index: 1;
+            background-color: transparent;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: white;
+            font-weight: 200;
+
+            border: none;
+            outline: none;
+
+            img {
+                height: 1rem;
+            }
+        }
+    }
+
+    .profilePhotoContainer {
+        background-color: #DDD;
+        min-width: 5.5rem;
+        width: 10vw;
+        min-height: 5.5rem;
+        height: 10vw;
+        margin: -2.5rem auto 0;
+        border-radius: 50%;
+        border: 0.2rem solid #FFF;
+        overflow: hidden;
+        position: relative;
+        transition-duration: 0.2s;
+        
+        img {
+            width: 100%;
+        }
+    }
+
+    .profilePhotoContainer:hover {
+        min-width: 6rem;
+        width: calc(10vw + 1rem);
+        min-height: 6rem;
+        height: calc(10vw + 1rem);
+        margin-bottom: -1rem;
+        box-shadow: 0 0 1rem #000;
+    }
+
+    section {
+        max-width: 40rem;
+        width: 100%;
+        margin: auto;
+
+        h2 {
+            font-size: $bigFontSize;
+            text-transform: uppercase;
+            color: white;
+            display: flex;
+            align-items: stretch;
+            gap: 1rem;
+
+            div {
+                background-color: $yellow;
+                width: 0.5rem;
+                padding: 0;
+                border-top-right-radius: 0.5rem;
+                border-bottom-right-radius: 0.5rem;
+            }
+        }
+
+        > div {
+            display: block;
+            padding: 1.2rem;
+            color: white;
+            font-weight: 300;
+            font-size: $smallFontSize;
+
+            span {
+                font-size: $smallFontSize;
+            }
+        }
+    }
+
+    .cardContainer {
+        background-color: #5252525D;
+        
+        width: 100%;
+        max-width: 40rem;
+        margin: auto;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .card {
+            width: 33vw;
+            max-width: 13.3rem;
+            
+            padding: 0.5rem 0;
+
+            text-align: center;
+            color: white;
+
+            transition-duration: 0.2s;
+
+            h1 {
+                font-size: $hugeFontSize;
+                display: block;
+            }
+
+            p {
+                font-size: $smallFontSize;
+            }
+        }
+
+        .card.active:hover {
+            box-shadow: 0 0 1rem #000;
+        }
+    }
+}
