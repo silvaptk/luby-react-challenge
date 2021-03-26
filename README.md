@@ -43,4 +43,4 @@ Para que o projeto funcione, é preciso ter o `node` e o `npm` instalados, e tam
 
 ## Considerações finais
 
-Já agradeço à LabLuby pela oportunidade de realização do teste, dizendo que aprendi muito durante esses dias de desenvolvimento. Desde já, fico no aguardo de um *feedback*. 
+Agradecimentos à equipe LabLuby pela oportunidade de realizar o teste. Desde já, disponível para qualquer contato via LinkedIn (https://linkedin.com/in/silvaptk) e via e-mail (patrick.silva2717@outlook.com).
